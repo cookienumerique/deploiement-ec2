@@ -34,7 +34,7 @@ _deploy.sh_
 touch ~/var/www/cookie-numerique/deploy.sh;
 chmod u+x ~/var/www/cookie-numerique/deploy.sh;
 echo '#!/bin/bash
-cd /var/www/cookie-numerique;
+cd /var/www/cookie-numerique || exit;
 git pull origin master;
 yarn install && yarn build && pm2 restart cookie-numerique' > ~/var/www/cookie-numerique/deploy.sh;
 ```

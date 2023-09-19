@@ -36,7 +36,7 @@ chmod u+x ~/var/www/cookie-numerique/deploy.sh;
 echo '#!/bin/bash
 cd /var/www/cookie-numerique || exit;
 git pull origin master;
-yarn install && yarn build && pm2 restart cookie-numerique' > ~/var/www/cookie-numerique/deploy.sh;
+yarn install && yarn build && pm2 restart cookie_numerique' > ~/var/www/cookie-numerique/deploy.sh;
 ```
 
 _appspec.yml_

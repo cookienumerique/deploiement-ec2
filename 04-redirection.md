@@ -1,7 +1,6 @@
 1. Redirection :
-    - Type A
-    - Nom @
-    - cible IP V4
+    - Type A - @ cible IP V4
+    - Type A - www - cible IP V4
 
 2. Configuration NGINX : 
 

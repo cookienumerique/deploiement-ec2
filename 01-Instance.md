@@ -8,7 +8,8 @@ Choix de l'instance ici : https://www.padok.fr/blog/instance-ec2-aws
 > ~/var/keypair
 
 3. Mettre le fichier en lecture seule
-`~/var/keypair/cookie-numerique.pem`
+
+`chmod 400 ~/var/keypair/cookie-numerique.pem`
 
 4. Dans paramètre réseau :
     - Autoriser SSH (anywhere), HTTP et HTTPS
@@ -44,5 +45,5 @@ npm install pm2 -g;
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
 source ~/.bashrc
 nvm install --lts;
-
+sudo chown ubuntu:ubuntu /var/www;
 ```

@@ -1,7 +1,7 @@
 # Deploiement EC2
 
 ## Création d'une instance EC2
-
+Choix de l'instance ici : https://www.padok.fr/blog/instance-ec2-aws
 1. Ubuntu
 2. Création d'une paire de clef : même nom que le projet et l'enregistrer dans 
 

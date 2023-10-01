@@ -10,6 +10,12 @@ Changer le root :
 ```root /var/www/cookie-numerique;```
 
 ```
+# Fichiers statics
+location /_next/static {
+        add_header Cache-Control "public, max-age=3600, immutable";
+        proxy_pass http://127.0.0.1:3000/_next/static;
+}
+        
 location / {
                 proxy_pass http://localhost:3000;
                 proxy_http_version 1.1;
@@ -18,6 +24,7 @@ location / {
                 proxy_set_header Host $host;
                 proxy_cache_bypass $http_upgrade;
         }
+
 ```
 
 Restart nginx : ```sudo systemctl restart nginx```
